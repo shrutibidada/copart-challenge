@@ -1,0 +1,48 @@
+<html>
+<head>
+	<!-- change the api key in position key=.  eg: AIzaSyD1WbiAWGHpy_hR0Mj6W2ZBwM6RKTE_fyY -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1WbiAWGHpy_hR0Mj6W2ZBwM6RKTE_fyY&libraries=places&callback=initAutocomplete"
+	        async defer></script>
+	<script src="script.js"></script>
+<head>
+<body>	
+<div id="locationField">
+<label for="phoneNo">Phone No</label><br>
+<input id="phoneNo" placeholder="(xxx)xxx-xxxx" onkeyup="formatPhoneNo(event)">
+<br>
+<label for="addrAuto">Search Address</label><br>
+  <input id="addrAuto" placeholder="Enter your address" onFocus="geolocate()" type="text" style="width:200px"></input>
+</div>
+<table id="address">
+  <tr>
+    <td>Street address</td>
+  </tr>
+  <tr>
+    <td ><input  id="street_number" disabled="true"></input></td>
+    <td ><input  id="route" disabled="true"></input></td>
+  </tr>
+  <tr>
+    <td class="label">City</td>
+  </tr>
+  <tr>
+    <td colspan="3"><input id="locality"
+          disabled="true"></input></td>
+  </tr>
+  <tr>
+    <td>State</td>
+    <td>Zip code</td>
+  </tr>
+  <tr>
+    <td><input id="administrative_area_level_1" disabled="true"></input></td>
+    <td ><input id="postal_code" disabled="true"></input></td>
+  </tr>
+  <tr>
+    <td >Country</td>
+  </tr>
+  <tr>
+    <td><input id="country" disabled="true"></input></td>
+  </tr>
+</table>
+
+</body>
+</html>
