@@ -1,0 +1,8 @@
+Without using any Integer functions like parseInt/valueOf convert the String to Integer. e.g. String input = “1234” - > Integer output=1234.
+
+TODO:
+
+The code is in java.
+Compile the code and run.
+It will ask you for the inputs.
+Enter the inputs accordingly
